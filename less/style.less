@@ -1,0 +1,211 @@
+.wrapKolovrat {
+    width: 100%;
+    height: 100%;
+
+    .Kolovrat {
+
+        .circle {
+            width: 300px;
+            height: 300px;
+            background: #000;
+            border-radius: 50%;
+            margin: 200px auto;
+            position: relative;
+            animation: rotate-kolovrat 10s linear infinite;
+
+            .d1 {
+                height: 100px;
+                width: 50px;
+                animation: color-rays 10s linear infinite;
+            }
+            
+            .d2 {
+                height: 50px;
+                width: 100px;
+                animation: color-rays 10s linear infinite;
+                border-bottom-right-radius: 50px 50px;
+            }
+            
+            .ray1 {
+                position: absolute;
+                top: 122px;
+                left: 124px;
+                animation: move-ray1 10s linear infinite;
+            }
+            
+            .ray2 {
+                position: absolute;
+                top: 132px;
+                left: 78px;
+                transform: rotate(45deg);
+                animation: move-ray2 10s linear infinite;
+            }
+            
+            .ray3 {
+                position: absolute;
+                top: 100px;
+                left: 52px;
+                transform: rotate(90deg);
+                animation: move-ray3 10s linear infinite;
+            }
+            
+            .ray4 {
+                position: absolute;
+                top: 52px;
+                left: 44px;
+                transform: rotate(135deg);
+                animation: move-ray4 10s linear infinite;
+            }
+            
+            .ray5 {
+                position: absolute;
+                top: 28px;
+                left: 74px;
+                transform: rotate(180deg);
+                animation: move-ray5 10s linear infinite;
+            }
+            
+            .ray6 {
+                position: absolute;
+                top: 20px;
+                left: 120px;
+                transform: rotate(225deg);
+                animation: move-ray6 10s linear infinite;
+            }
+            
+            .ray7 {
+                position: absolute;
+                top: 51px;
+                left: 147px;
+                transform: rotate(270deg);
+                animation: move-ray7 10s linear infinite;
+            }
+            
+            .ray8 {
+                position: absolute;
+                top: 98px;
+                left: 156px;
+                transform: rotate(315deg);
+                animation: move-ray8 10s linear infinite;
+            }
+            
+            @keyframes move-ray1 {
+            
+                10%, 90% {
+                    transform: translateY(0px);
+                }
+            
+                30%, 70% {
+                    transform: translateY(176px);
+                }
+            }
+            
+            @keyframes move-ray2 {
+            
+                10%, 90% {
+                    transform: translate(0px) rotate(45deg);
+                }
+            
+                30%, 70% {
+                    transform: translate(-118px, 118px) rotate(45deg);
+                }
+            }
+            
+            @keyframes move-ray3 {
+            
+                10%, 90% {
+                    transform: translateX(0px) rotate(90deg);
+                }
+            
+                30%, 70% {
+                    transform: translateX(-174px) rotate(90deg);
+            
+                }
+            }
+            
+            @keyframes move-ray4 {
+            
+                10%, 90% {
+                    transform: translate(0px) rotate(135deg);
+                }
+            
+                30%, 70% {
+                    transform: translate(-118px, -118px) rotate(135deg);
+                }
+            }
+            
+            @keyframes move-ray5 {
+            
+                10%, 90% {
+                    transform: translateY(0px) rotate(180deg);
+                }
+            
+                30%, 70% {
+                    transform: translateY(-176px) rotate(180deg);
+                }
+            }
+            
+            @keyframes move-ray6 {
+            
+                10%, 90% {
+                    transform: translate(0px) rotate(225deg);
+                }
+            
+                30%, 70% {
+                    transform: translate(120px, -120px) rotate(225deg);
+                }
+            }
+            
+            @keyframes move-ray7 {
+            
+                10%, 90% {
+                    transform: translateX(0px) rotate(270deg);
+                }
+            
+                30%, 70% {
+                    transform: translateX(176px) rotate(270deg);
+            
+                }
+            }
+            
+            @keyframes move-ray8 {
+            
+                10%, 90% {
+                    transform: translate(0px) rotate(315deg);
+                }
+            
+                30%, 70% {
+                    transform: translate(118px, 118px) rotate(315deg);
+                }
+            }
+        }
+
+        @keyframes rotate-kolovrat {
+
+            10% {
+                background: #000;
+            }
+
+            30%, 70% {
+                background: #FFBF40;
+            }
+
+            90% {
+                background: #000;
+                transform-origin: 50% 50%;
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes color-rays {
+            
+            10%, 90% {
+                background: #000;
+            }
+        
+            30%, 70% {
+                background: #FFBF40;
+            }
+        }
+    }
+}
